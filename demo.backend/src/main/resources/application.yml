@@ -1,0 +1,17 @@
+server:
+  port: 50001
+spring:
+  datasource:
+    url: jdbc:h2:mem:demodb
+    username: sa
+    password: 
+    driver-class-name: org.h2.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+cors:
+  allowed-origins: "http://localhost:8088"
